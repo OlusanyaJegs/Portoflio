@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page - Billy Portfolio Website</title>
+        <link rel="stylesheet" href="/index.html">
+        <!-- import the 3 links from home page -->
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="logo">
+                <h3 class="logo_title"><a href="/index.html">OJ</a></h3>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="/resume.html" class="nav_link">Resume</a></li>
+                    <li class="nav_item"><a href="/about.html" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="/projects.html" class="nav_link">Projects</a></li>
+                    <li class="nav_item"><a href="/contact.html" class="nav_link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <h2 class="section_title section_title_contact">Get in touch</h2>
+            <!-- Contact form -->
+            <div class="container">
+                <form action="/action_page.php">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="firstname" placeholder="Your name">
+
+                    <label for="email">Your Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your email">
+            
+                    <label for="subject">Your message</label>
+                    <textarea id="subject" name="subject" placeholder="Leave a message" style="height:100px"></textarea>
+                
+                    <button>
+                    <input type="submit" value="Submit">
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="section_subtitle section_subtitle_footer">Get in touch with me</p>
+            <a href="" class="footer_link">hello@meetbilly</a>
+            <ul class="social_list">
+                <li class="social_list_item"><a href="#" class="social_list_link">Github</a></li>
+                <li class="social_list_item"><a href="#" class="social_list_link">LinkedIn</a></li>
+                <li class="social_list_item"><a href="#" class="social_list_link">Instagram</a></li>
+                <li class="social_list_item"><a href="#" class="social_list_link">Twitter</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

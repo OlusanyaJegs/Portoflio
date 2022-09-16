@@ -6,7 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projects - Billy Portfolio Website</title>
         <link rel="stylesheet" href="/index.html">
-        <!-- import the 3 links from home page -->
+        <!-- normalize css link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- fontawesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- google font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        
+        <!-- default css link -->
+        <link rel="stylesheet" href="/resources/css/style.css">
     </head>
     <body>
         <!-- header -->
@@ -30,34 +42,44 @@
         <!-- Projects -->
         <section class="projects" id="projects">
             <h2 class="section_title section_title_projects">Recent Projects</h2>
-            <p class="section_subtitle section_subtitle_projects"></p>
+            <p class="section_subtitle section_subtitle_projects">a selection of my range of work</p>
 
             <div class="portfolio">
                 <!-- Portfolio item 1 -->
-                <a href="#" class="portfolio_item">
-                    <img src="/resources/imgs/website.jpg" alt="website image">
-                </a>
-                <p>Personal Website</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="portfolio_column">
+                    <a href="#" class="portfolio_item">
+                        <img src="/resources/imgs/website.jpg" alt="website image" class="portfolio_img">
+                    </a>
+                    <p>Personal Website</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>    
+                </div>
                 <!-- Portfolio item 2 -->
-                <a href="#" class="portfolio_item">
-                    <img src="/resources/imgs/exercisebookingapp.jpg" alt="a calendar picture">
-                </a>
-                <p>Exercise Booking App</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="portfolio_column">
+                    <a href="#" class="portfolio_item">
+                        <img src="/resources/imgs/exercisebookingapp.jpg" alt="a calendar picture" class="portfolio_img">
+                    </a>
+                    <p>Exercise Booking App</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>   
+                </div>
                 <!-- Portfolio item 3 -->
-                <a href="#" class="portfolio_item">
-                    <img src="/resources/imgs/residential.JPG" alt="a picture of the development">
-                </a>
-                <p>Residential Development</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="portfolio_column">
+                    <a href="#" class="portfolio_item">
+                        <img src="/resources/imgs/residential.JPG" alt="a picture of the development" class="portfolio_img">
+                    </a>
+                    <p>Residential Development</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>   
+                </div>
                 <!-- Portfolio item 4 -->
-                <a href="#" class="portfolio_item">
-                    <img src="/resources/imgs/gatRemodelling.jpg" alt="a picture of an illustration of gat terminal">
-                </a>
-                <p>General Aviation Terminal Remodelling</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="portfolio_column">
+                    <a href="#" class="portfolio_item">
+                        <img src="/resources/imgs/gatRemodelling.jpg" alt="a picture of an illustration of gat terminal" class="portfolio_img">
+                    </a>
+                    <p>General Aviation Terminal Remodelling</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+                </div>
             </div>
         </section>
+
+        <script src="index.js"></script>
     </body>
 </html>

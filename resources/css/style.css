@@ -5,7 +5,7 @@
 }
 
 /* custom properties */
-:root {
+/* :root {
     --ff-primary: 'Poppins', sans-serif;
     --ff-secondary: 'Fredoka One', cursive;
     --fw-reg: 300;
@@ -20,8 +20,8 @@
     --fs-body: 1rem;
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
         0.125em, 0.125em, 0.25em, rgba(0, 0, 0, 0.15);
-}
-
+} */
+/* 
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4rem;
@@ -29,10 +29,10 @@
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
-}
+} */
 
 /* general styling */
-html {
+/* html {
     scroll-behavior: smooth;
 }
 
@@ -62,10 +62,10 @@ strong {
 :focus {
     outline: 3px solid brown;
     outline-offset: 3px;
-}
+} */
 
 /* buttons */
-.btn {
+/* .btn {
     display: inline-block;
     padding: 1em 2em;
     background: red;
@@ -80,10 +80,10 @@ strong {
 
 .btn:hover {
     transform: scale(1.1);
-}
+} */
 
 /* typograpghy */
-h1,
+/* h1,
 h2,
 h3 {
     line-height: 1;
@@ -123,10 +123,10 @@ h3 {
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-}
+} */
 
 /* Nav Styling */
-header {
+/* header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
@@ -216,9 +216,9 @@ header {
     height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
-}
+} */
 
-.hamburger::before,
+/* .hamburger::before,
 .hamburger::after {
     content: '';
     position: absolute;
@@ -232,15 +232,15 @@ header {
 
 .hamburger::after {
     bottom: 6px;
-}
+} */
 
 /* home page styling */
-.container {
+/* .container {
     padding: 3% 50%;
-}
+} */
 
 /* body */
-.col-lg-6 {
+/* .col-lg-6 {
     margin-bottom: 1rem;
 }
 
@@ -277,8 +277,8 @@ header {
     line-height: 22px;
     color: black;
     margin-bottom: 3rem;
-}
-
+} */
+/* 
 .button {
     margin-top: 1rem;
 }
@@ -297,7 +297,7 @@ header {
     font-weight: bold;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) { */
     /* .intro {
         display: grid;
         width: min-content;
@@ -325,10 +325,10 @@ header {
         left: -2em;
         width: calc(100% + 2em);
     } */
-}
+/* } */
 
 /* Resume page Styling */
-.resumeService {
+/* .resumeService {
     text-align: center;
 }
 
@@ -350,9 +350,9 @@ header {
     max-width: 500px;
     margin: 0 auto;
     margin-bottom: 4em;
-}
+} */
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
     .resume {
         display: flex;
         max-width: 1200px;
@@ -363,10 +363,10 @@ header {
     .resume_service + .resume_service {
         margin-left: 2em;
     }
-}
+} */
 
 /* about me page Styling */
-.about {
+/* .about {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -405,10 +405,10 @@ header {
         position: relative;
         z-index: 2;
     }
-}
+} */
 
 /* project page Styling */
-.projects {
+/* .projects {
     text-align: center;
 }
 
@@ -417,7 +417,6 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 
-.portfolio_column {}
 
 .portfolio_item {
     background: var(--clr-accent);
@@ -439,11 +438,10 @@ header {
 .portfolio_item:focus .portfolio_img {
     transform: scale(1.2);
     opacity: 0.5;
-}
-
+} */
 
 /* footer Styling */
-.footer {
+/* .footer {
     background: black;
     color: white;
     text-align: center;
@@ -479,4 +477,4 @@ header {
 
 .social_list_link {
     padding: 1em;
-}
+} */

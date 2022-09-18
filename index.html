@@ -5,28 +5,154 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Billy Portfolio Website</title>
-        <!-- normalize css link -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- fontawesome link -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- google font link -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
-        
+        <!-- Unicons link -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <!-- default css link -->
         <link rel="stylesheet" href="/resources/css/style.css">
-
-        <!-- bootstrap link -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <!-- bootstrap icon  link -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body>
+        <!-- header/nav of the page -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">meetbilly</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- main body of the page -->
+        <main class="main">
+            <!-- home -->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <!-- social media icons -->
+                        <div class="home__social">
+                            <a href="https://github.com/OlusanyaJegs" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/olusanya-jegede-b3677bb7/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <a href="https://instagram.com/jegss__?igshid=YmMyMTA2M2Y=" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram-alt"></i>
+                            </a>
+                        </div>
+                        <!-- profile picture -->
+                        <div class="home__img">
+                            <img src="/resources/imgs/IMG_1694.png" x = '12' y = '18' alt="" class="home__blob-img"> <!-- x = '12' y = '18' -->
+                        </div>
+                        <!-- profile details -->
+                        <div class="home__data">
+                            <p class="home__desc greet">Hi, I am</p>
+                            <h3 class="home__title">Olusanya Jegede &#128526;</h3>
+                            <h1 class="home__subtitle">a Software Dev.</h1>
+                            <p class="home__desc">with an eye for designing and developing things that work on a computer</p>
+                            <a href="#contact" class="button button--flex">
+                                Hit me up!<i class="uil uil-message"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- page scroll direction -->
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- about -->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+                <!-- my picture container -->
+                <div class="about__container container grid">
+                    <img src="/resources/imgs/IMG_0458.jpeg" alt="" class="about__img">
+                    <!-- about data -->
+                    <div class="about__data">
+                        <p class="about__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eum nulla illo, autem dolor quas ipsa aperiam et nobis blanditiis. Delectus repudiandae, ad iure necessitatibus officiis obcaecati ex rem autem.<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eum nulla illo, autem dolor quas ipsa aperiam et nobis blanditiis. Delectus repudiandae, ad iure necessitatibus officiis obcaecati ex rem autem.
+                        </p>
+                        <div class="about__buttons">
+                            <a download="" href="" class="button button--flex">
+                                grab a copy of my cv <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- services -->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What i offer</span>
+                <!-- my picture container -->
+                <div class="services__container container grid">
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-web-grid services__icon"></i>
+                            <h3 class="services__title">Dev.</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Dev.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        
+
+        
+
+        
+
+        <!-- portfolio -->
+
+        <!-- contact -->
+
         <!-- header -->
         <!-- <header>
             <div class="logo">
@@ -210,12 +336,7 @@
             </ul>
         </footer> -->
 
-        <script src="index.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-            crossorigin="anonymous"></script>
+        <!-- default js link -->
+        <script src="js/index.js"></script>
     </body>
 </html>

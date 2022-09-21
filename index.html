@@ -7,6 +7,8 @@
         <title>Billy Portfolio Website</title>
         <!-- Unicons link -->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!-- swiper css link -->
+        <link rel="stylesheet" href="/resources/css/swiper-bundle.min.css">
         <!-- default css link -->
         <link rel="stylesheet" href="/resources/css/style.css">
     </head>
@@ -57,7 +59,7 @@
 
         <!-- main body of the page -->
         <main class="main">
-            <!-- home -->
+            <!-- home section-->
             <section class="home section" id="home">
                 <div class="home__container container grid">
                     <div class="home__content grid">
@@ -98,7 +100,9 @@
                     </div>
                 </div>
             </section>
-            <!-- about -->
+            <!-- end of home section-->
+
+            <!-- about section -->
             <section class="about section" id="about">
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My Introduction</span>
@@ -118,7 +122,9 @@
                     </div>
                 </div>
             </section>
-            <!-- services -->
+            <!-- end of about section -->
+
+            <!-- services section -->
             <section class="services section" id="services">
                 <h2 class="section__title">Services</h2>
                 <span class="section__subtitle">What i offer</span>
@@ -127,7 +133,7 @@
                     <div class="services__content">
                         <div>
                             <i class="uil uil-web-grid services__icon"></i>
-                            <h3 class="services__title">Dev.</h3>
+                            <h3 class="services__title">Software Development</h3>
                         </div>
                         <span class="button button--flex button--small button--link services__button">
                             View More
@@ -135,10 +141,174 @@
                         </span>
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Dev.</h4>
+                                <h4 class="services__modal-title">Software Development</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-arrow services__icon"></i>
+                            <h3 class="services__title">Architectural Designs</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Architectural Designs</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of services section -->
+
+            <!-- portfolio section -->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Some of my recent works</span>
+                <!-- my portfolio container -->
+                <div class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- portfolio item 1 -->
+                        <div class="portfoliol__content grid swiper-slide">
+                            <img src="/resources/imgs/website.jpg" alt="" class="portfolio_img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">vFour Ldn Website</h3>
+                                <p class="portfolio__desc">Professional website adaptable to all devices, with designs and animated interactions</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo here
+                                    <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- portfolio item 2 -->
+                        <div class="portfoliol__content grid swiper-slide">
+                            <img src="/resources/imgs/website.jpg" alt="" class="portfolio_img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">vFour Ldn Website</h3>
+                                <p class="portfolio__desc">Professional website adaptable to all devices, with designs and animated interactions</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo here
+                                    <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- portfolio item 3 -->
+                        <div class="portfoliol__content grid swiper-slide">
+                            <img src="/resources/imgs/website.jpg" alt="" class="portfolio_img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">vFour Ldn Website</h3>
+                                <p class="portfolio__desc">Professional website adaptable to all devices, with designs and animated interactions</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo here
+                                    <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- portfolio item 4 -->
+                        <div class="portfoliol__content grid swiper-slide">
+                            <img src="/resources/imgs/website.jpg" alt="" class="portfolio_img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">vFour Ldn Website</h3>
+                                <p class="portfolio__desc">Professional website adaptable to all devices, with designs and animated interactions</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo here
+                                    <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- arrows for slider -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- pagination for swiper -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- end of portfolio section -->
+
+            <!-- contact me section -->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Send me a message </span>
+                <!-- my contact form -->
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Your Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Your Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Your Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="button button--flex">
+                            hit me up
+                            <i class="uil uil-inbox button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+
+
+                <div class="contact__container container grid">
+                    <h2 class="section__title">Contact Me</h2>
+                    
+                    <a href="#" class="contact__subtitle">hello@meetbilly</a>
                 </div>
             </section>
         </main>
@@ -335,6 +505,9 @@
                 <li class="social_list_item"><a href="#" class="social_list_link">Twitter</a></li>
             </ul>
         </footer> -->
+
+        <!-- swiper js link -->
+        <script src="js/swiper-bundle.min.js"></script>
 
         <!-- default js link -->
         <script src="js/index.js"></script>

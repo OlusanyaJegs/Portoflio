@@ -28,51 +28,6 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-// services section functionality
-// variable assigned to the services modal in the html
-const modalViews = document.querySelectorAll('.services__modal');
-// variable assigned to the services button in the html
-const modalBtns = document.querySelectorAll('.services__button');
-// variable assigned to the services modal close button in the html
-const modalCloses = document.querySelectorAll('.services__modal-close');
-
-// function to target the modal sections when clicked
-let modal = function(modalClick) {
-    modalViews[modalClick].classList.add('active-modal');
-}
-
-// iterate through every modal to activate click
-modalBtns.forEach((modalBtn, i) => {
-    // add an eventlistener of click
-    modalBtn.addEventListener('click', () => {
-        modal(i);
-    })
-})
-
-// iterate through every modal to activate close
-modalCloses.forEach((modalClose) => {
-    // add an eventlistener of click
-    modalClose.addEventListener('click', () => {
-        modalViews.forEach((modalView) => {
-            modalView.classList.remove('active-modal');
-        })
-    })
-})
-
-// Portfolio swiper
-var swiper = new Swiper('.mySwiper', {
-    cssMode: true,
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el:'.swiper-pagination',
-        clickable: true,
-    },
-});
-
 // scroll selections active link
 const sections = document.querySelectorAll('section[id]');
 
@@ -116,29 +71,3 @@ function scrollUp() {
     }
 }
 window.addEventListener('scroll', scrollUp);
-
-// dark light theme
-const themeButton = document.getElementById('theme-button');
-const darkTheme = 'dark-theme';
-const iconTheme = 'uil-sun';
-// previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme');
-const selectedIcon = localStorage.getItem('selected-icon');
-// obtain the current theme that the interface has by validating the dark theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
-// validate if the user previously chose a topic
-if (selectedTheme) {
-    //conditon to check if the validation is fulfilled
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme); 
-}
-// activate or deactivate the theme manaually with the button
-themeButton.addEventListener('click', () => {
-    // add or remove the dark icon theme
-    document.body.classList.toggle(darkTheme);
-    themeButton.classList.toggle(iconTheme);
-    // we svae the theme and the current icon that the user choice
-    localStorage.setItem('selected-theme', getCurrentTheme());
-    localStorage.setItem('selected-icon', getCurrentIcon());
-})
